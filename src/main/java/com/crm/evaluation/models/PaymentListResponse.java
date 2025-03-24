@@ -2,13 +2,15 @@ package com.crm.evaluation.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class PaymentResponse {
+import java.util.List;
+
+public class PaymentListResponse {
 
     @JsonProperty("success")
     private boolean success;
 
     @JsonProperty("data")
-    private Payment data;
+    private List<Payment> data;
 
     @JsonProperty("message")
     private String message;
@@ -21,11 +23,11 @@ public class PaymentResponse {
         this.success = success;
     }
 
-    public Payment getData() {
+    public List<Payment> getData() {
         return data;
     }
 
-    public void setData(Payment data) {
+    public void setData(List<Payment> data) {
         this.data = data;
     }
 

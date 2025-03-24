@@ -1,6 +1,8 @@
 package com.crm.evaluation.models;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Invoice {
 
     @JsonProperty("id")
@@ -9,11 +11,11 @@ public class Invoice {
     @JsonProperty("external_id")
     private String externalId;
 
+    @JsonProperty("invoice_number")
+    private String invoiceNumber;
+
     @JsonProperty("status")
     private String status;
-
-    @JsonProperty("invoice_number")
-    private int invoiceNumber;
 
     @JsonProperty("sent_at")
     private String sentAt;
@@ -33,7 +35,10 @@ public class Invoice {
     @JsonProperty("offer_id")
     private int offerId;
 
-    // Getters et setters
+    @JsonProperty("integration_invoice_id") // Add this line
+    private String integrationInvoiceId; // Add this field
+
+    // Getters and setters for all fields
     public int getId() {
         return id;
     }
@@ -50,20 +55,20 @@ public class Invoice {
         this.externalId = externalId;
     }
 
+    public String getInvoiceNumber() {
+        return invoiceNumber;
+    }
+
+    public void setInvoiceNumber(String invoiceNumber) {
+        this.invoiceNumber = invoiceNumber;
+    }
+
     public String getStatus() {
         return status;
     }
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public int getInvoiceNumber() {
-        return invoiceNumber;
-    }
-
-    public void setInvoiceNumber(int invoiceNumber) {
-        this.invoiceNumber = invoiceNumber;
     }
 
     public String getSentAt() {
@@ -112,5 +117,13 @@ public class Invoice {
 
     public void setOfferId(int offerId) {
         this.offerId = offerId;
+    }
+
+    public String getIntegrationInvoiceId() {  // Getter for integrationInvoiceId
+        return integrationInvoiceId;
+    }
+
+    public void setIntegrationInvoiceId(String integrationInvoiceId) {  // Setter for integrationInvoiceId
+        this.integrationInvoiceId = integrationInvoiceId;
     }
 }

@@ -39,6 +39,9 @@ public class Payment {
     @JsonProperty("integration_type")  // Add this line to handle the new field
     private String integrationType;
 
+    @JsonProperty("deleted_at")  // Add the new field 'deleted_at'
+    private String deletedAt;  // The type could be String or any other type depending on your needs
+
     // Getters and setters
     public int getId() {
         return id;
@@ -134,5 +137,13 @@ public class Payment {
 
     public void setIntegrationType(String integrationType) {  // Setter for integrationType
         this.integrationType = integrationType;
+    }
+
+    public String getDeletedAt() {  // Getter for deletedAt
+        return deletedAt;
+    }
+
+    public void setDeletedAt(String deletedAt) {  // Setter for deletedAt
+        this.deletedAt = deletedAt;
     }
 }
