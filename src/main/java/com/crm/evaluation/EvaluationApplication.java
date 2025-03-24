@@ -1,13 +1,13 @@
-package com.example.mycrm;
+package com.crm.evaluation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MyCrmApplication {
+public class EvaluationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MyCrmApplication.class, args);
+		SpringApplication.run(EvaluationApplication.class, args);
 	}
 
 }

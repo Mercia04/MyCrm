@@ -1,0 +1,116 @@
+package com.crm.evaluation.models;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class Invoice {
+
+    @JsonProperty("id")
+    private int id;
+
+    @JsonProperty("external_id")
+    private String externalId;
+
+    @JsonProperty("status")
+    private String status;
+
+    @JsonProperty("invoice_number")
+    private int invoiceNumber;
+
+    @JsonProperty("sent_at")
+    private String sentAt;
+
+    @JsonProperty("due_at")
+    private String dueAt;
+
+    @JsonProperty("source_type")
+    private String sourceType;
+
+    @JsonProperty("source_id")
+    private int sourceId;
+
+    @JsonProperty("client_id")
+    private int clientId;
+
+    @JsonProperty("offer_id")
+    private int offerId;
+
+    // Getters et setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getExternalId() {
+        return externalId;
+    }
+
+    public void setExternalId(String externalId) {
+        this.externalId = externalId;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public int getInvoiceNumber() {
+        return invoiceNumber;
+    }
+
+    public void setInvoiceNumber(int invoiceNumber) {
+        this.invoiceNumber = invoiceNumber;
+    }
+
+    public String getSentAt() {
+        return sentAt;
+    }
+
+    public void setSentAt(String sentAt) {
+        this.sentAt = sentAt;
+    }
+
+    public String getDueAt() {
+        return dueAt;
+    }
+
+    public void setDueAt(String dueAt) {
+        this.dueAt = dueAt;
+    }
+
+    public String getSourceType() {
+        return sourceType;
+    }
+
+    public void setSourceType(String sourceType) {
+        this.sourceType = sourceType;
+    }
+
+    public int getSourceId() {
+        return sourceId;
+    }
+
+    public void setSourceId(int sourceId) {
+        this.sourceId = sourceId;
+    }
+
+    public int getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(int clientId) {
+        this.clientId = clientId;
+    }
+
+    public int getOfferId() {
+        return offerId;
+    }
+
+    public void setOfferId(int offerId) {
+        this.offerId = offerId;
+    }
+}
