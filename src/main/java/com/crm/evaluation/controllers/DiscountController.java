@@ -25,16 +25,13 @@ public class DiscountController {
     @GetMapping("/settings")
     public String showDiscountSettings(Model model) {
         try {
-            // Récupérer le token d'authentification depuis la session
-            // String token = (String) session.getAttribute("token");
             String token = "eyJ0eXAiOi";
             
             if (token == null) {
                 model.addAttribute("error", "Vous devez être connecté pour accéder à cette page");
-                return "login"; // Rediriger vers la page de connexion si non authentifié
+                return "login";
             }
             
-            // Récupérer les paramètres de remise actuels
             DiscountSettingDTO discountSetting = discountService.getCurrentDiscountSetting(token);
             model.addAttribute("discountSetting", discountSetting);
             
@@ -54,8 +51,6 @@ public class DiscountController {
             RedirectAttributes redirectAttributes) {
         
         try {
-            // Récupérer le token d'authentification depuis la session
-            // String token = (String) session.getAttribute("authToken");
             String token = "eyJ0eXAiOi";
             
             if (token == null) {

@@ -63,7 +63,7 @@ User user = (User) request.getAttribute("user");
 </div>
 <h2 class="display-6 fw-bold mb-0"><%= request.getAttribute("totalOffers") != null ? request.getAttribute("totalOffers") : 0 %></h2>
 <p class="text-muted small">Total des offres actives</p>
-<a href="#" class="btn btn-sm btn-outline-primary mt-2">Voir détails</a>
+<!-- <a href="#" class="btn btn-sm btn-outline-primary mt-2">Voir détails</a> -->
 </div>
 </div>
 </div>
@@ -97,7 +97,7 @@ User user = (User) request.getAttribute("user");
 </div>
 <h2 class="display-6 fw-bold mb-0"><%= request.getAttribute("totalProjects") != null ? request.getAttribute("totalProjects") : 0 %></h2>
 <p class="text-muted small">Projets en cours</p>
-<a href="#" class="btn btn-sm btn-outline-warning mt-2">Voir projets</a>
+<!-- <a href="#" class="btn btn-sm btn-outline-warning mt-2">Voir projets</a> -->
 </div>
 </div>
 </div>
@@ -114,7 +114,7 @@ User user = (User) request.getAttribute("user");
 </div>
 <h2 class="display-6 fw-bold mb-0"><%= request.getAttribute("totalInvoices") != null ? request.getAttribute("totalInvoices") : 0 %></h2>
 <p class="text-muted small">Factures émises</p>
-<a href="#" class="btn btn-sm btn-outline-danger mt-2">Voir factures</a>
+<!-- <a href="#" class="btn btn-sm btn-outline-danger mt-2">Voir factures</a> -->
 </div>
 </div>
 </div>
@@ -131,7 +131,7 @@ User user = (User) request.getAttribute("user");
 </div>
 <h2 class="display-6 fw-bold mb-0"><%= request.getAttribute("totalTasks") != null ? request.getAttribute("totalTasks") : 0 %></h2>
 <p class="text-muted small">Tâches à réaliser</p>
-<a href="#" class="btn btn-sm btn-outline-info mt-2">Voir tâches</a>
+<!-- <a href="#" class="btn btn-sm btn-outline-info mt-2">Voir tâches</a> -->
 </div>
 </div>
 </div>
